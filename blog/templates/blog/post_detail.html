@@ -1,0 +1,19 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class = "title">
+        <h1><a href="/">Blog Django Girls</a></h1>
+    </div>
+
+    <div class="post-container">
+        <h2>{{ post.title }}</h2>
+        {% if post.published_date %}
+            <div class="published-date" style="margin-bottom: 10px;">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+            <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}
