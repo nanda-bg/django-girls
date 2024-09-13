@@ -10,7 +10,7 @@
     
     {% for post in posts %}
         <div class= "post-container">
-            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+            <h2><a href="./post/{{ post.pk }}">{{ post.title }}</a></h2>
             <p class = "published-date">Publicado em {{ post.published_date }}</p>
             <p class = "text">{{ post.text|linebreaksbr }}</p>
         </div>
