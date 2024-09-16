@@ -4,12 +4,8 @@
 {% load static %}
 
 {% block content %}
-    <div class = "title">
-        <h1><a href="/">Blog Django Girls</a></h1>
-    </div>
-    
     {% for post in posts %}
-        <div class= "post-container">
+        <div class= "post-list-container">
             <h2><a href="./post/{{ post.pk }}">{{ post.title }}</a></h2>
             <p class = "published-date">Publicado em {{ post.published_date }}</p>
             <p class = "text">{{ post.text|linebreaksbr }}</p>

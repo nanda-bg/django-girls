@@ -27,6 +27,10 @@ body {
     text-decoration: none;
 }
 
+h2.post-title {
+    width: 100%;
+}
+
 h2 a {
     color: 	#a3e635;
 }
@@ -41,10 +45,56 @@ h2 a:hover {
     font-size: 12px;
 }
 
-.post-container {
+.post-list-container, .post-detail-container {
     width: 80%;
 }
 
 .text{
     text-align: justify;
+}
+
+.header-post{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.edit-link {
+    color: #3f6212;
+}
+
+.edit-link:hover {
+    color: #65a30d;
+    text-decoration: none;
+}
+
+.post-form{
+    width: 50%;
+}
+
+.post-form input[type="text"], .post-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid;
+}
+
+.post-form input[type="text"]{
+    width: 80%;
+    margin-left: 20px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.post-form button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #1a2e05;;
+    color: #cbf580;
+    border: none;
+    cursor: pointer;
+    align-self: right;
 }
